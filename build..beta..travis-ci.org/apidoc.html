@@ -1,0 +1,1285 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api-documentation for
+    <a
+
+        href="http://github.com/brix/crypto-js"
+
+    >crypto-js (v3.1.8)</a>
+</h1>
+<h4>JavaScript library of crypto standards.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js">module crypto-js</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.EvpKDF">
+            function <span class="apidocSignatureSpan">crypto-js.</span>EvpKDF
+            <span class="apidocSignatureSpan">(password, salt, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacMD5">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacMD5
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacRIPEMD160">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacRIPEMD160
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacSHA1">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA1
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacSHA224">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA224
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacSHA256">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA256
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacSHA3">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA3
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacSHA384">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA384
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.HmacSHA512">
+            function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA512
+            <span class="apidocSignatureSpan">(message, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.MD5">
+            function <span class="apidocSignatureSpan">crypto-js.</span>MD5
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.PBKDF2">
+            function <span class="apidocSignatureSpan">crypto-js.</span>PBKDF2
+            <span class="apidocSignatureSpan">(password, salt, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RIPEMD160">
+            function <span class="apidocSignatureSpan">crypto-js.</span>RIPEMD160
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.SHA1">
+            function <span class="apidocSignatureSpan">crypto-js.</span>SHA1
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.SHA224">
+            function <span class="apidocSignatureSpan">crypto-js.</span>SHA224
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.SHA256">
+            function <span class="apidocSignatureSpan">crypto-js.</span>SHA256
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.SHA3">
+            function <span class="apidocSignatureSpan">crypto-js.</span>SHA3
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.SHA384">
+            function <span class="apidocSignatureSpan">crypto-js.</span>SHA384
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.SHA512">
+            function <span class="apidocSignatureSpan">crypto-js.</span>SHA512
+            <span class="apidocSignatureSpan">(message, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>AES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>DES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>RC4</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>RC4Drop</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>Rabbit</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>RabbitLegacy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>TripleDES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>algo</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>enc</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>format</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>kdf</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>lib</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>mode</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>pad</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">crypto-js.</span>x64</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.AES">module crypto-js.AES</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.AES.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.AES.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.AES.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.AES.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.DES">module crypto-js.DES</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.DES.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.DES.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.DES.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.DES.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.RC4">module crypto-js.RC4</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RC4.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.RC4.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RC4.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.RC4.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.RC4Drop">module crypto-js.RC4Drop</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RC4Drop.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.RC4Drop.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RC4Drop.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.RC4Drop.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.Rabbit">module crypto-js.Rabbit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.Rabbit.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.Rabbit.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.Rabbit.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.Rabbit.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.RabbitLegacy">module crypto-js.RabbitLegacy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RabbitLegacy.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.RabbitLegacy.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.RabbitLegacy.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.RabbitLegacy.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js.TripleDES">module crypto-js.TripleDES</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.TripleDES.decrypt">
+            function <span class="apidocSignatureSpan">crypto-js.TripleDES.</span>decrypt
+            <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crypto-js.TripleDES.encrypt">
+            function <span class="apidocSignatureSpan">crypto-js.TripleDES.</span>encrypt
+            <span class="apidocSignatureSpan">(message, key, cfg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js" id="apidoc.module.crypto-js">module crypto-js</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.EvpKDF" id="apidoc.element.crypto-js.EvpKDF">
+        function <span class="apidocSignatureSpan">crypto-js.</span>EvpKDF
+        <span class="apidocSignatureSpan">(password, salt, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">EvpKDF = function (password, salt, cfg) {
+	        return EvpKDF.create(cfg).compute(password, salt);
+	    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacMD5" id="apidoc.element.crypto-js.HmacMD5">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacMD5
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacMD5 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacRIPEMD160" id="apidoc.element.crypto-js.HmacRIPEMD160">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacRIPEMD160
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacRIPEMD160 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacSHA1" id="apidoc.element.crypto-js.HmacSHA1">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA1
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacSHA1 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+console.log(SHA256(&#x22;Message&#x22;));
+```
+
+Including all libraries, for access to extra methods:
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+console.log(CryptoJS.<span class="apidocCodeKeywordSpan">HmacSHA1</span>(&#x22;Message&#x22;, &#x22;Key&#x22;));
+```
+
+## Client (browser)
+
+Requirements:
+
+- Node.js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacSHA224" id="apidoc.element.crypto-js.HmacSHA224">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA224
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacSHA224 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacSHA256" id="apidoc.element.crypto-js.HmacSHA256">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA256
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacSHA256 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacSHA3" id="apidoc.element.crypto-js.HmacSHA3">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA3
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacSHA3 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacSHA384" id="apidoc.element.crypto-js.HmacSHA384">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA384
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacSHA384 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.HmacSHA512" id="apidoc.element.crypto-js.HmacSHA512">
+        function <span class="apidocSignatureSpan">crypto-js.</span>HmacSHA512
+        <span class="apidocSignatureSpan">(message, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HmacSHA512 = function (message, key) {
+	                return new C_algo.HMAC.init(hasher, key).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.MD5" id="apidoc.element.crypto-js.MD5">
+        function <span class="apidocSignatureSpan">crypto-js.</span>MD5
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MD5 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.PBKDF2" id="apidoc.element.crypto-js.PBKDF2">
+        function <span class="apidocSignatureSpan">crypto-js.</span>PBKDF2
+        <span class="apidocSignatureSpan">(password, salt, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">PBKDF2 = function (password, salt, cfg) {
+	        return PBKDF2.create(cfg).compute(password, salt);
+	    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RIPEMD160" id="apidoc.element.crypto-js.RIPEMD160">
+        function <span class="apidocSignatureSpan">crypto-js.</span>RIPEMD160
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">RIPEMD160 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.SHA1" id="apidoc.element.crypto-js.SHA1">
+        function <span class="apidocSignatureSpan">crypto-js.</span>SHA1
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SHA1 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.SHA224" id="apidoc.element.crypto-js.SHA224">
+        function <span class="apidocSignatureSpan">crypto-js.</span>SHA224
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SHA224 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.SHA256" id="apidoc.element.crypto-js.SHA256">
+        function <span class="apidocSignatureSpan">crypto-js.</span>SHA256
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SHA256 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Usage without RequireJS
+
+```html
+&#x3c;script type=&#x22;text/javascript&#x22; src=&#x22;path-to/bower_components/crypto-js/crypto-js.js&#x22;&#x3e;&#x3c;/script
+&#x3e;
+&#x3c;script type=&#x22;text/javascript&#x22;&#x3e;
+    var encrypted = CryptoJS.AES(...);
+    var encrypted = CryptoJS.<span class="apidocCodeKeywordSpan">SHA256</span>(...);
+&#x3c;/script&#x3e;
+```
+
+## API
+
+See: https://code.google.com/p/crypto-js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.SHA3" id="apidoc.element.crypto-js.SHA3">
+        function <span class="apidocSignatureSpan">crypto-js.</span>SHA3
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SHA3 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.SHA384" id="apidoc.element.crypto-js.SHA384">
+        function <span class="apidocSignatureSpan">crypto-js.</span>SHA384
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SHA384 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.SHA512" id="apidoc.element.crypto-js.SHA512">
+        function <span class="apidocSignatureSpan">crypto-js.</span>SHA512
+        <span class="apidocSignatureSpan">(message, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SHA512 = function (message, cfg) {
+	                return new hasher.init(cfg).finalize(message);
+	            }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.AES" id="apidoc.module.crypto-js.AES">module crypto-js.AES</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.AES.decrypt" id="apidoc.element.crypto-js.AES.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.AES.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.AES.encrypt" id="apidoc.element.crypto-js.AES.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.AES.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.DES" id="apidoc.module.crypto-js.DES">module crypto-js.DES</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.DES.decrypt" id="apidoc.element.crypto-js.DES.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.DES.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.DES.encrypt" id="apidoc.element.crypto-js.DES.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.DES.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.RC4" id="apidoc.module.crypto-js.RC4">module crypto-js.RC4</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RC4.decrypt" id="apidoc.element.crypto-js.RC4.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.RC4.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RC4.encrypt" id="apidoc.element.crypto-js.RC4.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.RC4.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.RC4Drop" id="apidoc.module.crypto-js.RC4Drop">module crypto-js.RC4Drop</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RC4Drop.decrypt" id="apidoc.element.crypto-js.RC4Drop.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.RC4Drop.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RC4Drop.encrypt" id="apidoc.element.crypto-js.RC4Drop.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.RC4Drop.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.Rabbit" id="apidoc.module.crypto-js.Rabbit">module crypto-js.Rabbit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.Rabbit.decrypt" id="apidoc.element.crypto-js.Rabbit.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.Rabbit.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.Rabbit.encrypt" id="apidoc.element.crypto-js.Rabbit.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.Rabbit.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.RabbitLegacy" id="apidoc.module.crypto-js.RabbitLegacy">module crypto-js.RabbitLegacy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RabbitLegacy.decrypt" id="apidoc.element.crypto-js.RabbitLegacy.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.RabbitLegacy.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.RabbitLegacy.encrypt" id="apidoc.element.crypto-js.RabbitLegacy.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.RabbitLegacy.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.crypto-js.TripleDES" id="apidoc.module.crypto-js.TripleDES">module crypto-js.TripleDES</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.TripleDES.decrypt" id="apidoc.element.crypto-js.TripleDES.decrypt">
+        function <span class="apidocSignatureSpan">crypto-js.TripleDES.</span>decrypt
+        <span class="apidocSignatureSpan">(ciphertext, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (ciphertext, key, cfg) {
+	                        return selectCipherStrategy(key).decrypt(cipher, ciphertext, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+
+#### Object encryption
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crypto-js.TripleDES.encrypt" id="apidoc.element.crypto-js.TripleDES.encrypt">
+        function <span class="apidocSignatureSpan">crypto-js.TripleDES.</span>encrypt
+        <span class="apidocSignatureSpan">(message, key, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (message, key, cfg) {
+	                        return selectCipherStrategy(key).encrypt(cipher, message, key, cfg);
+	                    }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Plain text encryption
+
+```javascript
+var CryptoJS = require(&#x22;crypto-js&#x22;);
+
+// Encrypt
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+;);
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(plaintext);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
