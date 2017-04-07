@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://github.com/brix/crypto-js"
-
-    >crypto-js (v3.1.8)</a>
+    <a href="http://github.com/brix/crypto-js">crypto-js (v3.1.8)</a>
 </h1>
 <h4>JavaScript library of crypto standards.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.crypto-js">module crypto-js</a><ol>
 
@@ -1402,14 +1395,14 @@
 	                return new C_algo.HMAC.init(hasher, key).finalize(message);
 	            }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-console.log(SHA256(&#x22;Message&#x22;));
+console.log(SHA256("Message"));
 ```
 
 Including all libraries, for access to extra methods:
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
-console.log(CryptoJS.<span class="apidocCodeKeywordSpan">HmacSHA1</span>(&#x22;Message&#x22;, &#x22;Key&#x22;));
+var CryptoJS = require("crypto-js");
+console.log(CryptoJS.<span class="apidocCodeKeywordSpan">HmacSHA1</span>("Message", "Key"));
 ```
 
 ## Client (browser)
@@ -1595,13 +1588,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">MD5</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">MD5</span>('message');
 	     *     var hash = CryptoJS.MD5(wordArray);
 	     */
 	    C.MD5 = Hasher._createHelper(MD5);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1657,13 +1650,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">RIPEMD160</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">RIPEMD160</span>('message');
 	     *     var hash = CryptoJS.RIPEMD160(wordArray);
 	     */
 	    C.RIPEMD160 = Hasher._createHelper(RIPEMD160);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1688,13 +1681,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA1</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA1</span>('message');
 	     *     var hash = CryptoJS.SHA1(wordArray);
 	     */
 	    C.SHA1 = Hasher._createHelper(SHA1);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1719,13 +1712,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA224</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA224</span>('message');
 	     *     var hash = CryptoJS.SHA224(wordArray);
 	     */
 	    C.SHA224 = SHA256._createHelper(SHA224);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1747,12 +1740,12 @@ Requirements:
 ### Usage without RequireJS
 
 ```html
-&#x3c;script type=&#x22;text/javascript&#x22; src=&#x22;path-to/bower_components/crypto-js/crypto-js.js&#x22;&#x3e;&#x3c;/script
-&#x3e;
-&#x3c;script type=&#x22;text/javascript&#x22;&#x3e;
+&lt;script type="text/javascript" src="path-to/bower_components/crypto-js/crypto-js.js"&gt;&lt;/script
+&gt;
+&lt;script type="text/javascript"&gt;
     var encrypted = CryptoJS.AES(...);
     var encrypted = CryptoJS.<span class="apidocCodeKeywordSpan">SHA256</span>(...);
-&#x3c;/script&#x3e;
+&lt;/script&gt;
 ```
 
 ## API
@@ -1781,13 +1774,13 @@ See: https://code.google.com/p/crypto-js
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA3</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA3</span>('message');
 	     *     var hash = CryptoJS.SHA3(wordArray);
 	     */
 	    C.SHA3 = Hasher._createHelper(SHA3);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1812,13 +1805,13 @@ See: https://code.google.com/p/crypto-js
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA384</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA384</span>('message');
 	     *     var hash = CryptoJS.SHA384(wordArray);
 	     */
 	    C.SHA384 = SHA512._createHelper(SHA384);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1843,13 +1836,13 @@ See: https://code.google.com/p/crypto-js
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA512</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA512</span>('message');
 	     *     var hash = CryptoJS.SHA512(wordArray);
 	     */
 	    C.SHA512 = Hasher._createHelper(SHA512);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -1941,13 +1934,13 @@ See: https://code.google.com/p/crypto-js
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -1974,14 +1967,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2008,13 +2001,13 @@ console.log(plaintext);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2041,14 +2034,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2075,13 +2068,13 @@ console.log(plaintext);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2108,14 +2101,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2142,13 +2135,13 @@ console.log(plaintext);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2175,14 +2168,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2209,13 +2202,13 @@ console.log(plaintext);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2242,14 +2235,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2276,13 +2269,13 @@ console.log(plaintext);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2309,14 +2302,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2343,13 +2336,13 @@ console.log(plaintext);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.<span class="apidocCodeKeywordSpan">decrypt</span>(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2376,14 +2369,14 @@ console.log(plaintext);
 #### Plain text encryption
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>(&#x27;my message&#x27;, &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.<span class="apidocCodeKeywordSpan">encrypt</span>('my message', 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -2502,14 +2495,14 @@ console.log(plaintext);
 	                return new C_algo.HMAC.init(hasher, key).finalize(message);
 	            }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-console.log(SHA256(&#x22;Message&#x22;));
+console.log(SHA256("Message"));
 ```
 
 Including all libraries, for access to extra methods:
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
-console.log(CryptoJS.<span class="apidocCodeKeywordSpan">HmacSHA1</span>(&#x22;Message&#x22;, &#x22;Key&#x22;));
+var CryptoJS = require("crypto-js");
+console.log(CryptoJS.<span class="apidocCodeKeywordSpan">HmacSHA1</span>("Message", "Key"));
 ```
 
 ## Client (browser)
@@ -2695,13 +2688,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">MD5</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">MD5</span>('message');
 	     *     var hash = CryptoJS.MD5(wordArray);
 	     */
 	    C.MD5 = Hasher._createHelper(MD5);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -2757,13 +2750,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">RIPEMD160</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">RIPEMD160</span>('message');
 	     *     var hash = CryptoJS.RIPEMD160(wordArray);
 	     */
 	    C.RIPEMD160 = Hasher._createHelper(RIPEMD160);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -2788,13 +2781,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA1</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA1</span>('message');
 	     *     var hash = CryptoJS.SHA1(wordArray);
 	     */
 	    C.SHA1 = Hasher._createHelper(SHA1);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -2819,13 +2812,13 @@ Requirements:
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA224</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA224</span>('message');
 	     *     var hash = CryptoJS.SHA224(wordArray);
 	     */
 	    C.SHA224 = SHA256._createHelper(SHA224);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -2847,12 +2840,12 @@ Requirements:
 ### Usage without RequireJS
 
 ```html
-&#x3c;script type=&#x22;text/javascript&#x22; src=&#x22;path-to/bower_components/crypto-js/crypto-js.js&#x22;&#x3e;&#x3c;/script
-&#x3e;
-&#x3c;script type=&#x22;text/javascript&#x22;&#x3e;
+&lt;script type="text/javascript" src="path-to/bower_components/crypto-js/crypto-js.js"&gt;&lt;/script
+&gt;
+&lt;script type="text/javascript"&gt;
     var encrypted = CryptoJS.AES(...);
     var encrypted = CryptoJS.<span class="apidocCodeKeywordSpan">SHA256</span>(...);
-&#x3c;/script&#x3e;
+&lt;/script&gt;
 ```
 
 ## API
@@ -2881,13 +2874,13 @@ See: https://code.google.com/p/crypto-js
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA3</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA3</span>('message');
 	     *     var hash = CryptoJS.SHA3(wordArray);
 	     */
 	    C.SHA3 = Hasher._createHelper(SHA3);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -2912,13 +2905,13 @@ See: https://code.google.com/p/crypto-js
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA384</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA384</span>('message');
 	     *     var hash = CryptoJS.SHA384(wordArray);
 	     */
 	    C.SHA384 = SHA512._createHelper(SHA384);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -2943,13 +2936,13 @@ See: https://code.google.com/p/crypto-js
 	     *
 	     * @example
 	     *
-	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA512</span>(&#x27;message&#x27;);
+	     *     var hash = CryptoJS.<span class="apidocCodeKeywordSpan">SHA512</span>('message');
 	     *     var hash = CryptoJS.SHA512(wordArray);
 	     */
 	    C.SHA512 = Hasher._createHelper(SHA512);
 
 	    /**
-	     * Shortcut function to the HMAC&#x27;s object interface.
+	     * Shortcut function to the HMAC's object interface.
 	     *
 ...</pre></li>
     </ul>
@@ -3006,7 +2999,7 @@ See: https://code.google.com/p/crypto-js
 
 	            if (!reverseMap) {
 	                    reverseMap = this._reverseMap = [];
-	                    for (var j = 0; j &#x3c; map.length; j++) {
+	                    for (var j = 0; j &lt; map.length; j++) {
 	                        reverseMap[map.charCodeAt(j)] = j;
 	                    }
 	            }
@@ -3028,10 +3021,10 @@ See: https://code.google.com/p/crypto-js
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3061,15 +3054,15 @@ console.log(decryptedData);
 
 	            // Convert
 	            var base64Chars = [];
-	            for (var i = 0; i &#x3c; sigBytes; i += 3) {
-	                var byte1 = (words[i &#x3e;&#x3e;&#x3e; 2]       &#x3e;&#x3e;&#x3e; (24 - (i % 4) * 8))       &#x26; 0xff;
-	                var byte2 = (words[(i + 1) &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - ((i + 1) % 4) * 8)) &#x26; 0xff;
-	                var byte3 = (words[(i + 2) &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - ((i + 2) % 4) * 8)) &#x26; 0xff;
+	            for (var i = 0; i &lt; sigBytes; i += 3) {
+	                var byte1 = (words[i &gt;&gt;&gt; 2]       &gt;&gt;&gt; (24 - (i % 4) * 8))       &amp; 0xff;
+	                var byte2 = (words[(i + 1) &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - ((i + 1) % 4) * 8)) &amp; 0xff;
+	                var byte3 = (words[(i + 2) &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - ((i + 2) % 4) * 8)) &amp; 0xff;
 
-	                var triplet = (byte1 &#x3c;&#x3c; 16) | (byte2 &#x3c;&#x3c; 8) | byte3;
+	                var triplet = (byte1 &lt;&lt; 16) | (byte2 &lt;&lt; 8) | byte3;
 
-	                for (var j = 0; (j &#x3c; 4) &#x26;&#x26; (i + j * 0.75 &#x3c; sigBytes); j++) {
-	                    base64Chars.push(map.charAt((triplet &#x3e;&#x3e;&#x3e; (6 * (3 - j))) &#x26; 0x3f));
+	                for (var j = 0; (j &lt; 4) &amp;&amp; (i + j * 0.75 &lt; sigBytes); j++) {
+	                    base64Chars.push(map.charAt((triplet &gt;&gt;&gt; (6 * (3 - j))) &amp; 0x3f));
 	                }
 	            }
 
@@ -3081,21 +3074,21 @@ console.log(decryptedData);
 	                }
 	            }
 
-	            return base64Chars.join(&#x27;&#x27;);
+	            return base64Chars.join('');
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3125,8 +3118,8 @@ console.log(decryptedData);
 
 	            // Convert
 	            var words = [];
-	            for (var i = 0; i &#x3c; hexStrLength; i += 2) {
-	                words[i &#x3e;&#x3e;&#x3e; 3] |= parseInt(hexStr.substr(i, 2), 16) &#x3c;&#x3c; (24 - (i % 8) * 4);
+	            for (var i = 0; i &lt; hexStrLength; i += 2) {
+	                words[i &gt;&gt;&gt; 3] |= parseInt(hexStr.substr(i, 2), 16) &lt;&lt; (24 - (i % 8) * 4);
 	            }
 
 	            return new WordArray.init(words, hexStrLength / 2);
@@ -3135,10 +3128,10 @@ console.log(decryptedData);
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3164,27 +3157,27 @@ console.log(decryptedData);
 
 	            // Convert
 	            var hexChars = [];
-	            for (var i = 0; i &#x3c; sigBytes; i++) {
-	                var bite = (words[i &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - (i % 4) * 8)) &#x26; 0xff;
-	                hexChars.push((bite &#x3e;&#x3e;&#x3e; 4).toString(16));
-	                hexChars.push((bite &#x26; 0x0f).toString(16));
+	            for (var i = 0; i &lt; sigBytes; i++) {
+	                var bite = (words[i &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - (i % 4) * 8)) &amp; 0xff;
+	                hexChars.push((bite &gt;&gt;&gt; 4).toString(16));
+	                hexChars.push((bite &amp; 0x0f).toString(16));
 	            }
 
-	            return hexChars.join(&#x27;&#x27;);
+	            return hexChars.join('');
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3212,8 +3205,8 @@ console.log(decryptedData);
 
 	            // Convert
 	            var words = [];
-	            for (var i = 0; i &#x3c; latin1StrLength; i++) {
-	                words[i &#x3e;&#x3e;&#x3e; 2] |= (latin1Str.charCodeAt(i) &#x26; 0xff) &#x3c;&#x3c; (24 - (i % 4) * 8);
+	            for (var i = 0; i &lt; latin1StrLength; i++) {
+	                words[i &gt;&gt;&gt; 2] |= (latin1Str.charCodeAt(i) &amp; 0xff) &lt;&lt; (24 - (i % 4) * 8);
 	            }
 
 	            return new WordArray.init(words, latin1StrLength);
@@ -3222,10 +3215,10 @@ console.log(decryptedData);
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3251,26 +3244,26 @@ console.log(decryptedData);
 
 	            // Convert
 	            var latin1Chars = [];
-	            for (var i = 0; i &#x3c; sigBytes; i++) {
-	                var bite = (words[i &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - (i % 4) * 8)) &#x26; 0xff;
+	            for (var i = 0; i &lt; sigBytes; i++) {
+	                var bite = (words[i &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - (i % 4) * 8)) &amp; 0xff;
 	                latin1Chars.push(String.fromCharCode(bite));
 	            }
 
-	            return latin1Chars.join(&#x27;&#x27;);
+	            return latin1Chars.join('');
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3298,8 +3291,8 @@ console.log(decryptedData);
 
 	            // Convert
 	            var words = [];
-	            for (var i = 0; i &#x3c; utf16StrLength; i++) {
-	                words[i &#x3e;&#x3e;&#x3e; 1] |= utf16Str.charCodeAt(i) &#x3c;&#x3c; (16 - (i % 2) * 16);
+	            for (var i = 0; i &lt; utf16StrLength; i++) {
+	                words[i &gt;&gt;&gt; 1] |= utf16Str.charCodeAt(i) &lt;&lt; (16 - (i % 2) * 16);
 	            }
 
 	            return WordArray.create(words, utf16StrLength * 2);
@@ -3308,10 +3301,10 @@ console.log(decryptedData);
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3337,26 +3330,26 @@ console.log(decryptedData);
 
 	            // Convert
 	            var utf16Chars = [];
-	            for (var i = 0; i &#x3c; sigBytes; i += 2) {
-	                var codePoint = (words[i &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (16 - (i % 4) * 8)) &#x26; 0xffff;
+	            for (var i = 0; i &lt; sigBytes; i += 2) {
+	                var codePoint = (words[i &gt;&gt;&gt; 2] &gt;&gt;&gt; (16 - (i % 4) * 8)) &amp; 0xffff;
 	                utf16Chars.push(String.fromCharCode(codePoint));
 	            }
 
-	            return utf16Chars.join(&#x27;&#x27;);
+	            return utf16Chars.join('');
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3385,10 +3378,10 @@ console.log(decryptedData);
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3411,22 +3404,22 @@ console.log(decryptedData);
 	            try {
 	                return decodeURIComponent(escape(Latin1.stringify(wordArray)));
 	            } catch (e) {
-	                throw new Error(&#x27;Malformed UTF-8 data&#x27;);
+	                throw new Error('Malformed UTF-8 data');
 	            }
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3456,10 +3449,10 @@ console.log(decryptedData);
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3484,16 +3477,16 @@ console.log(decryptedData);
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3523,7 +3516,7 @@ console.log(decryptedData);
 	            var ciphertextWords = ciphertext.words;
 
 	            // Test for salt
-	            if (ciphertextWords[0] == 0x53616c74 &#x26;&#x26; ciphertextWords[1] == 0x65645f5f) {
+	            if (ciphertextWords[0] == 0x53616c74 &amp;&amp; ciphertextWords[1] == 0x65645f5f) {
 	                // Extract salt
 	                var salt = WordArray.create(ciphertextWords.slice(2, 4));
 
@@ -3538,10 +3531,10 @@ console.log(decryptedData);
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.<span class="apidocCodeKeywordSpan">parse</span>(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3577,16 +3570,16 @@ console.log(decryptedData);
     <li>example usage<pre class="apidocCodePre">...
 
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 var data = [{id: 1}, {id: 2}]
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), &#x27;secret key 123&#x27
+var ciphertext = CryptoJS.AES.encrypt(JSON.<span class="apidocCodeKeywordSpan">stringify</span>(data), 'secret key 123'
 ;);
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), 'secret key 123');
 var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 
 console.log(decryptedData);
@@ -3614,7 +3607,7 @@ console.log(decryptedData);
 	            var sigBytes = this.sigBytes;
 
 	            // Clamp
-	            words[sigBytes &#x3e;&#x3e;&#x3e; 2] &#x26;= 0xffffffff &#x3c;&#x3c; (32 - (sigBytes % 4) * 8);
+	            words[sigBytes &gt;&gt;&gt; 2] &amp;= 0xffffffff &lt;&lt; (32 - (sigBytes % 4) * 8);
 	            words.length = Math.ceil(sigBytes / 4);
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -3630,9 +3623,9 @@ console.log(decryptedData);
 	            // Concat
 	            if (thisSigBytes % 4) {
 	                // Copy one byte at a time
-	                for (var i = 0; i &#x3c; thatSigBytes; i++) {
-	                    var thatByte = (thatWords[i &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - (i % 4) * 8)) &#x26; 0xff;
-	                    thisWords[(thisSigBytes + i) &#x3e;&#x3e;&#x3e; 2] |= thatByte &#x3c;&#x3c; (24 - ((thisSigBytes + i) % 4) *
+	                for (var i = 0; i &lt; thatSigBytes; i++) {
+	                    var thatByte = (thatWords[i &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - (i % 4) * 8)) &amp; 0xff;
+	                    thisWords[(thisSigBytes + i) &gt;&gt;&gt; 2] |= thatByte &lt;&lt; (24 - ((thisSigBytes + i) % 4) *
 8);
 ...</pre></li>
     </ul>
@@ -3692,14 +3685,14 @@ console.log(decryptedData);
 	            // Concat
 	            if (thisSigBytes % 4) {
 	                // Copy one byte at a time
-	                for (var i = 0; i &#x3c; thatSigBytes; i++) {
-	                    var thatByte = (thatWords[i &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - (i % 4) * 8)) &#x26; 0xff;
-	                    thisWords[(thisSigBytes + i) &#x3e;&#x3e;&#x3e; 2] |= thatByte &#x3c;&#x3c; (24 - ((thisSigBytes + i) % 4) * 8);
+	                for (var i = 0; i &lt; thatSigBytes; i++) {
+	                    var thatByte = (thatWords[i &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - (i % 4) * 8)) &amp; 0xff;
+	                    thisWords[(thisSigBytes + i) &gt;&gt;&gt; 2] |= thatByte &lt;&lt; (24 - ((thisSigBytes + i) % 4) * 8);
 	                }
 	            } else {
 	                // Copy one word at a time
-	                for (var i = 0; i &#x3c; thatSigBytes; i += 4) {
-	                    thisWords[(thisSigBytes + i) &#x3e;&#x3e;&#x3e; 2] = thatWords[i &#x3e;&#x3e;&#x3e; 2];
+	                for (var i = 0; i &lt; thatSigBytes; i += 4) {
+	                    thisWords[(thisSigBytes + i) &gt;&gt;&gt; 2] = thatWords[i &gt;&gt;&gt; 2];
 	                }
 	            }
 	            this.sigBytes += thatSigBytes;
@@ -3744,7 +3737,7 @@ console.log(decryptedData);
 	        // Convert other array views to uint8
 	        if (
 	            typedArray instanceof Int8Array ||
-	            (typeof Uint8ClampedArray !== &#x22;undefined&#x22; &#x26;&#x26; typedArray instanceof Uint8ClampedArray) ||
+	            (typeof Uint8ClampedArray !== "undefined" &amp;&amp; typedArray instanceof Uint8ClampedArray) ||
 	            typedArray instanceof Int16Array ||
 	            typedArray instanceof Uint16Array ||
 	            typedArray instanceof Int32Array ||
@@ -3762,8 +3755,8 @@ console.log(decryptedData);
 
 	            // Extract bytes
 	            var words = [];
-	            for (var i = 0; i &#x3c; typedArrayByteLength; i++) {
-	                words[i &#x3e;&#x3e;&#x3e; 2] |= typedArray[i] &#x3c;&#x3c; (24 - (i % 4) * 8);
+	            for (var i = 0; i &lt; typedArrayByteLength; i++) {
+	                words[i &gt;&gt;&gt; 2] |= typedArray[i] &lt;&lt; (24 - (i % 4) * 8);
 	            }
 
 	            // Initialize this word array
@@ -3774,7 +3767,7 @@ console.log(decryptedData);
 	        }
 	    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -3810,16 +3803,16 @@ console.log(decryptedData);
 	                var mask = 0xffffffff;
 
 	                return function () {
-	                    m_z = (0x9069 * (m_z &#x26; 0xFFFF) + (m_z &#x3e;&#x3e; 0x10)) &#x26; mask;
-	                    m_w = (0x4650 * (m_w &#x26; 0xFFFF) + (m_w &#x3e;&#x3e; 0x10)) &#x26; mask;
-	                    var result = ((m_z &#x3c;&#x3c; 0x10) + m_w) &#x26; mask;
+	                    m_z = (0x9069 * (m_z &amp; 0xFFFF) + (m_z &gt;&gt; 0x10)) &amp; mask;
+	                    m_w = (0x4650 * (m_w &amp; 0xFFFF) + (m_w &gt;&gt; 0x10)) &amp; mask;
+	                    var result = ((m_z &lt;&lt; 0x10) + m_w) &amp; mask;
 	                    result /= 0x100000000;
 	                    result += 0.5;
-	                    return result * (Math.random() &#x3e; .5 ? 1 : -1);
+	                    return result * (Math.random() &gt; .5 ? 1 : -1);
 	                }
 	            });
 
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -3861,13 +3854,13 @@ console.log(decryptedData);
 	        }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ```javascript
-var CryptoJS = require(&#x22;crypto-js&#x22;);
+var CryptoJS = require("crypto-js");
 
 // Encrypt
-var ciphertext = CryptoJS.AES.encrypt(&#x27;my message&#x27;, &#x27;secret key 123&#x27;);
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123');
 
 // Decrypt
-var bytes  = CryptoJS.AES.decrypt(ciphertext.<span class="apidocCodeKeywordSpan">toString</span>(), &#x27;secret key 123&#x27;);
+var bytes  = CryptoJS.AES.decrypt(ciphertext.<span class="apidocCodeKeywordSpan">toString</span>(), 'secret key 123');
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
 console.log(plaintext);
@@ -3895,7 +3888,7 @@ console.log(plaintext);
 	                        subtype.$super.init.apply(this, arguments);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -3935,7 +3928,7 @@ console.log(plaintext);
 	                        subtype.$super.init.apply(this, arguments);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -3975,7 +3968,7 @@ console.log(plaintext);
 	                        subtype.$super.init.apply(this, arguments);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -4015,7 +4008,7 @@ console.log(plaintext);
 	                        subtype.$super.init.apply(this, arguments);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -4055,7 +4048,7 @@ console.log(plaintext);
 	                        subtype.$super.init.apply(this, arguments);
 	                    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-	            for (var i = 0, rcache; i &#x3c; nBytes; i += 4) {
+	            for (var i = 0, rcache; i &lt; nBytes; i += 4) {
 	                var _r = r((rcache || Math.random()) * 0x100000000);
 
 	                rcache = _r() * 0x3ade67b7;
@@ -4100,7 +4093,7 @@ console.log(plaintext);
 
 	        // Pad
 	        data.concat(CryptoJS.lib.WordArray.random(nPaddingBytes - 1)).
-	             concat(CryptoJS.lib.WordArray.create([nPaddingBytes &#x3c;&#x3c; 24], 1));
+	             concat(CryptoJS.lib.WordArray.create([nPaddingBytes &lt;&lt; 24], 1));
 	    }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 	         * @param {WordArray} data The data to pad.
@@ -4132,7 +4125,7 @@ console.log(plaintext);
     <ul>
     <li>description and source-code<pre class="apidocCodePre">unpad = function (data) {
 	        // Get number of padding bytes from last byte
-	        var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	        var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	        // Remove padding
 	        data.sigBytes -= nPaddingBytes;
@@ -4149,7 +4142,7 @@ console.log(plaintext);
 	         */
 	        unpad: function (data) {
 	            // Get number of padding bytes from last byte
-	            var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	            // Remove padding
 	            data.sigBytes -= nPaddingBytes;
@@ -4224,7 +4217,7 @@ console.log(plaintext);
 	         */
 	        unpad: function (data) {
 	            // Get number of padding bytes from last byte
-	            var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	            // Remove padding
 	            data.sigBytes -= nPaddingBytes;
@@ -4289,7 +4282,7 @@ console.log(plaintext);
 	         */
 	        unpad: function (data) {
 	            // Get number of padding bytes from last byte
-	            var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	            // Remove padding
 	            data.sigBytes -= nPaddingBytes;
@@ -4318,11 +4311,11 @@ console.log(plaintext);
 	            var nPaddingBytes = blockSizeBytes - data.sigBytes % blockSizeBytes;
 
 	            // Create padding word
-	            var paddingWord = (nPaddingBytes &#x3c;&#x3c; 24) | (nPaddingBytes &#x3c;&#x3c; 16) | (nPaddingBytes &#x3c;&#x3c; 8) | nPaddingBytes;
+	            var paddingWord = (nPaddingBytes &lt;&lt; 24) | (nPaddingBytes &lt;&lt; 16) | (nPaddingBytes &lt;&lt; 8) | nPaddingBytes;
 
 	            // Create padding
 	            var paddingWords = [];
-	            for (var i = 0; i &#x3c; nPaddingBytes; i += 4) {
+	            for (var i = 0; i &lt; nPaddingBytes; i += 4) {
 	                paddingWords.push(paddingWord);
 	            }
 	            var padding = WordArray.create(paddingWords, nPaddingBytes);
@@ -4360,7 +4353,7 @@ console.log(plaintext);
     <ul>
     <li>description and source-code<pre class="apidocCodePre">unpad = function (data) {
 	            // Get number of padding bytes from last byte
-	            var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	            // Remove padding
 	            data.sigBytes -= nPaddingBytes;
@@ -4377,7 +4370,7 @@ console.log(plaintext);
 	         */
 	        unpad: function (data) {
 	            // Get number of padding bytes from last byte
-	            var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	            // Remove padding
 	            data.sigBytes -= nPaddingBytes;
@@ -4440,7 +4433,7 @@ console.log(plaintext);
 
 	        // Unpad
 	        var i = data.sigBytes - 1;
-	        while (!((dataWords[i &#x3e;&#x3e;&#x3e; 2] &#x3e;&#x3e;&#x3e; (24 - (i % 4) * 8)) &#x26; 0xff)) {
+	        while (!((dataWords[i &gt;&gt;&gt; 2] &gt;&gt;&gt; (24 - (i % 4) * 8)) &amp; 0xff)) {
 	            i--;
 	        }
 	        data.sigBytes = i + 1;
@@ -4457,7 +4450,7 @@ console.log(plaintext);
 	         */
 	        unpad: function (data) {
 	            // Get number of padding bytes from last byte
-	            var nPaddingBytes = data.words[(data.sigBytes - 1) &#x3e;&#x3e;&#x3e; 2] &#x26; 0xff;
+	            var nPaddingBytes = data.words[(data.sigBytes - 1) &gt;&gt;&gt; 2] &amp; 0xff;
 
 	            // Remove padding
 	            data.sigBytes -= nPaddingBytes;
@@ -4473,3 +4466,4 @@ console.log(plaintext);
     ]
 </div>
 </div>
+</body></html>
